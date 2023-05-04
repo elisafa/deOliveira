@@ -1,0 +1,30 @@
+@use "variaveis";
+@use "function";
+
+.hero {
+  &__container {
+    background-image: url(../images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    &__img {
+      margin-top: function.em(180);
+      width: function.em(413);
+    }
+    .simbol {
+      margin: 25px 0 25px 0;
+      width: 87px;
+      height: 3px;
+      background-color: variaveis.$dourado;
+    }
+
+    &__texto {
+      width: function.em(413);
+      height: function.em(71);
+      font-weight: 400;
+      line-height: function.em(20);
+      color: #fff;
+    }
+  }
+}

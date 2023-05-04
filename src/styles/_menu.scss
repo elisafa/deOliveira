@@ -6,6 +6,8 @@
   background-color: rgba(60, 54, 54, 0.8);
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100vw;
 
   &__menu {
     margin: 0 auto;
