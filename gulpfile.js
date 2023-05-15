@@ -2,24 +2,29 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
+const copy = require("gulp-copy");
 
 function scripts() {
-  return gulp.src("./src/scripts/*.js").pipe(uglify()).pipe(gulp.dest("./dist/js"));
+  return gulp.src("src/scripts/*.js").pipe(uglify()).pipe(gulp.dest("./dist/js"));
+}
+function html() {
+  return gulp.src("src/pages/*.html").pipe(copy("./dist", { prefix: 1 }));
 }
 
 function styles() {
   return gulp
-    .src("./src/styles/*.scss")
+    .src("src/styles/*.scss")
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(gulp.dest("./dist/css"));
 }
 
 function images() {
-  return gulp.src("./src/images/**/*").pipe(imagemin()).pipe(gulp.dest("./dist/images"));
+  return gulp.src("src/images/**/*").pipe(imagemin()).pipe(gulp.dest("./dist/images"));
 }
 
-exports.default = gulp.parallel(styles, images, scripts);
+exports.default = gulp.parallel(styles, images, scripts, html);
 exports.watch = function () {
-  gulp.watch("./src/styles/*.scss", gulp.parallel(styles));
-  gulp.watch("./src/scripts/*.js", gulp.parallel(scripts));
+  gulp.watch("src/styles/*.scss", gulp.parallel(styles));
+  gulp.watch("src/scripts/*.js", gulp.parallel(scripts));
+  gulp.watch("src/pages/*.html", gulp.parallel(html));
 };

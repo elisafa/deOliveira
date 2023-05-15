@@ -18,15 +18,16 @@
 
     &__opcoes {
       width: function.em(800);
+      display: flex;
+      justify-content: space-between;
+
       &__itens {
-        display: flex;
-        justify-content: space-between;
+        list-style: none;
 
         a {
+          text-decoration: none;
           font-size: function.em(16);
           color: variaveis.$dourado;
-          text-decoration: none;
-          list-style: none;
           text-transform: uppercase;
         }
       }
