@@ -2,6 +2,7 @@
 @use "menu";
 @use "function";
 @use "hero";
+@use "baixos";
 
 * {
   margin: 0;
@@ -11,20 +12,22 @@
 }
 
 .container {
-  max-width: function.em(1290);
+  width: function.em(1290);
 }
 
 .grid2 {
   width: function.em(1280);
-  height: 100vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: function.em(413) function.em(847);
   column-gap: 30px;
+  @media (max-width: 1900px) {
+    grid-template-columns: function.em(413) function.em(750);
+    column-gap: 180px;
+  }
 }
 
 .grid3 {
-  // background-color: red;
   width: function.em(1280);
   height: 100vh;
   margin: 0 auto;

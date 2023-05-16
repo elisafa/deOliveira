@@ -4,13 +4,20 @@
 .hero {
   &__container {
     background-image: url(../images/rainbowkf/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     height: function.em(880);
+
+    @media (max-width: 1900px) {
+      height: function.em(680);
+    }
 
     &__img {
       margin-top: function.em(180);
       width: 100%;
+      @media (max-width: 1900px) {
+        margin-top: function.em(100);
+      }
     }
 
     &__info {
@@ -50,6 +57,9 @@
 
     &__texto2 {
       margin-top: function.em(100);
+      @media (max-width: 1900px) {
+        margin-top: function.em(50);
+      }
     }
 
     &__btn {
@@ -74,9 +84,15 @@
       }
     }
 
-    &__raibowblue {
+    &__rainbowblue {
       width: 847px;
       height: 1000px;
+
+      @media (max-width: 1900px) {
+        width: 650px;
+        height: 767px;
+        // margin-left: 80px;
+      }
     }
   }
 }

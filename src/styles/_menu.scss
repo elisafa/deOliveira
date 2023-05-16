@@ -8,6 +8,9 @@
   justify-content: space-between;
   position: fixed;
   width: 100vw;
+  // @media (max-width: 1900px) {
+  //   width: 95vw;
+  // }
 
   &__menu {
     margin: 0 auto;
@@ -16,11 +19,18 @@
     justify-content: space-between;
     gap: function.em(340);
 
+    @media (max-width: 1900px) {
+      gap: function.em(120);
+    }
+
     &__opcoes {
       width: function.em(800);
       display: flex;
       gap: 63px;
       justify-content: end;
+      @media (max-width: 1900px) {
+        gap: 33px;
+      }
 
       &__itens {
         list-style: none;
