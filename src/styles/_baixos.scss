@@ -3,7 +3,6 @@
 
 .baixos {
   height: function.em(800);
-  //   width: 100vw;
   background-color: variaveis.$preto;
   display: flex;
   align-items: center;
@@ -21,16 +20,24 @@
     background-color: variaveis.$cinza;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.7s ease-in;
+    border: 5px solid variaveis.$cinza;
+
+    &:hover {
+      transform: scale(1.1);
+      border: 5px solid variaveis.$dourado;
+    }
   }
 
-  &__figures {
+  &__figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.5s ease-in;
+    justify-content: space-around;
+    gap: 5px;
   }
 
-  //   figure:hover {
-  //     transform: scale(1.1);
-  //   }
+  &__img2 {
+    height: 30px;
+  }
 }
