@@ -3,15 +3,22 @@
 
 .hero {
   &__container {
-    background-image: url(../images/bg-header.jpg);
+    background-image: url(../images/rainbowkf/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: function.em(880);
 
     &__img {
       margin-top: function.em(180);
-      width: function.em(413);
+      width: 100%;
     }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+    }
+
     .simbol {
       margin: 25px 0 25px 0;
       width: 87px;
@@ -19,12 +26,57 @@
       background-color: variaveis.$dourado;
     }
 
-    &__texto {
-      width: function.em(413);
-      height: function.em(71);
-      font-weight: 400;
-      line-height: function.em(20);
-      color: #fff;
+    &__titulo {
+      max-width: function.em(413);
+      width: 100%;
+      height: function.em(56);
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+
+    &__texto,
+    &__texto2 {
+      max-width: function.em(413);
+      width: 100%;
+      text-align: justify;
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+
+    &__texto2 {
+      margin-top: function.em(100);
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 25px;
+      height: 85px;
+      background-color: transparent;
+      border: 2px solid rgba(200, 157, 70, 1);
+      border-radius: 10px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 0px;
+        text-align: justify;
+        color: #ffffff;
+      }
+    }
+
+    &__raibowblue {
+      width: 847px;
+      height: 1000px;
     }
   }
 }

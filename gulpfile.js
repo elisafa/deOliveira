@@ -8,7 +8,7 @@ function scripts() {
   return gulp.src("src/scripts/*.js").pipe(uglify()).pipe(gulp.dest("./dist/js"));
 }
 function html() {
-  return gulp.src("src/pages/*.html").pipe(copy("./dist", { prefix: 1 }));
+  return gulp.src("src/pages/**/*").pipe(copy("./dist", { prefix: 1 }));
 }
 
 function styles() {

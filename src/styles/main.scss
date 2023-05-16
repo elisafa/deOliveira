@@ -15,12 +15,12 @@
 }
 
 .grid2 {
-  // background-color: red;
   width: function.em(1280);
   height: 100vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: function.em(413) function.em(847);
+  column-gap: 30px;
 }
 
 .grid3 {

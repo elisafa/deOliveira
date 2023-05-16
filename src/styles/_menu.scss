@@ -19,7 +19,8 @@
     &__opcoes {
       width: function.em(800);
       display: flex;
-      justify-content: space-between;
+      gap: 63px;
+      justify-content: end;
 
       &__itens {
         list-style: none;
