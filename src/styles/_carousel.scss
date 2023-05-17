@@ -1,40 +1,90 @@
 @use "function";
 @use "variaveis";
 
-.carousel {
-  position: relative;
-}
-
-.slides {
-  display: flex;
+.slider {
+  margin: 60px auto;
+  width: 100%;
+  height: 800px;
   overflow: hidden;
-}
 
-.slide {
-  flex-shrink: 0;
-}
+  .slides {
+    display: flex;
+    width: 400%;
+    height: 800px;
 
-.carousel img {
-  width: 100vw;
-  height: 90vh;
-}
+    input {
+      display: none;
+    }
 
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
+    #radio1:checked ~ .first {
+      margin-left: 0;
+    }
+    #radio2:checked ~ .first {
+      margin-left: -25%;
+    }
+    #radio3:checked ~ .first {
+      margin-left: -50%;
+    }
+    #radio4:checked ~ .first {
+      margin-left: -75%;
+    }
 
-.prev {
-  left: 10px;
-}
+    #radio1:checked ~ .navigation-auto .auto-btn1 {
+      background-color: rgba(247, 247, 247, 0.6);
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2 {
+      background-color: rgba(247, 247, 247, 0.6);
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3 {
+      background-color: rgba(247, 247, 247, 0.6);
+    }
+    #radio4:checked ~ .navigation-auto .auto-btn4 {
+      background-color: rgba(247, 247, 247, 0.6);
+    }
 
-.next {
-  right: 10px;
+    .navigation-auto {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+      margin-top: 750px;
+      div {
+        border: 2px solid blue;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+      }
+    }
+  }
+  .slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+
+    img {
+      width: 100%;
+    }
+  }
+  .manual-navigation {
+    position: absolute;
+    margin-top: -50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .manual-btn {
+      border: 2px solid #fff;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: poiter;
+      transition: 1s;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
 }

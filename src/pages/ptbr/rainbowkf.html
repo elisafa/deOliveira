@@ -23,6 +23,7 @@
       </nav>
     </header>
     <main>
+      <!-- HERO -->
       <section class="hero">
         <div class="hero__container">
           <div class="grid2">
@@ -67,6 +68,7 @@
           </div>
         </div>
       </section>
+      <!-- BAIXOS -->
       <section class="baixos">
         <div class="baixos__container container">
           <div class="baixos__mirage bg--baixo">
@@ -145,7 +147,7 @@
           </div>
         </div>
       </section>
-
+      <!-- VIDEOS -->
       <section class="videos container">
         <figure class="videos__fig">
           <img
@@ -173,34 +175,39 @@
           <div class="videos__seletores__seletor3"></div>
         </div>
       </section>
+      <!-- CAROUSEL -->
+      <section class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
 
-      <section class="carousel">
-        <div class="carousel">
-          <button class="prev">Anterior</button>
-          <div class="slides">
-            <div class="slide">
-              <img
-                class="carousel_img hidem"
-                src="/src/images/baixos/testecarrosel1.jpg"
-                alt=""
-              />
-            </div>
-            <div class="slide">
-              <img
-                class="carousel_img hidem"
-                src="/src/images/baixos/testecarrosel2.jpg"
-                alt=""
-              />
-            </div>
-            <div class="slide">
-              <img
-                class="carousel_img"
-                src="/src/images/baixos/testecarrosel3.jpg"
-                alt=""
-              />
-            </div>
+          <div class="slide first">
+            <img src="/src/images/baixos/testecarrosel1.jpg" alt="foto1" />
           </div>
-          <button class="next">Próximo</button>
+          <div class="slide">
+            <img src="/src/images/baixos/testecarrosel2.jpg" alt="foto2" />
+          </div>
+          <div class="slide">
+            <img src="/src/images/baixos/testecarrosel3.jpg" alt="foto3" />
+          </div>
+          <div class="slide">
+            <img src="/src/images/baixos/testecarrosel4.jpg" alt="foto4" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
         </div>
       </section>
     </main>
