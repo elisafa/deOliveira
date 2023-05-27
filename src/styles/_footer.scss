@@ -1,0 +1,17 @@
+@use "variaveis";
+@use "function";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: variaveis.$preto;
+  height: 400px;
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+  }
+}

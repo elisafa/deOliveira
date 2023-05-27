@@ -1,5 +1,6 @@
 "use strict";
 
+// CARROSSEL INICIO
 const slideWrapper = document.querySelector('[data-slide="wrapper"]');
 const slideList = document.querySelector('[data-slide="list"]');
 const navPreviousButton = document.querySelector('[data-slide="nav-previous-button"]');
@@ -222,3 +223,4 @@ function initSlider({ startAtIndex = 0, autoPlay = true, timeInterval = 3000 }) 
   setVisibleSlide({ index: startAtIndex + 2, animate: true });
   setAutoPlay();
 }
+// FIM CARROSSEL
