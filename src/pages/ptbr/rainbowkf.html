@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
     <link rel="stylesheet" href="/dist/css/main.css" />
     <title>Rainbow KF</title>
   </head>
@@ -97,7 +101,7 @@
           </div>
           <div class="baixos__musicway bg--baixo">
             <figure class="baixos__figure">
-              <img src="/src/images/baixos/mirage.png" alt="Mirage" />
+              <img src="/src/images/baixos/musicway.png" alt="Music Way" />
               <img
                 class="baixos__img2"
                 src="/src/images/baixos/musicwaylogo.png"
@@ -177,40 +181,71 @@
       </section>
       <!-- CAROUSEL -->
       <section class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-
-          <div class="slide first">
-            <img src="/src/images/baixos/testecarrosel1.jpg" alt="foto1" />
+        <div class="wrapper">
+          <div class="slide-wrapper" data-slide="wrapper">
+            <button
+              class="slide-nav-button slide-nav-previous fas fa-chevron-left"
+              data-slide="nav-previous-button"
+            ></button>
+            <button
+              class="slide-nav-button slide-nav-next fas fa-chevron-right"
+              data-slide="nav-next-button"
+            ></button>
+            <div class="slide-list" data-slide="list">
+              <div class="slide-item" data-slide="item" data-index="0">
+                <div class="slide-content">
+                  <img
+                    class="slide-image"
+                    src="../../images/baixos/testecarrosel1.jpg"
+                    alt="Assassin's Creed"
+                    width="300px"
+                    height="600px"
+                  />
+                  <div class="slide-description">
+                    <h3>Music Way</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item" data-slide="item" data-index="1">
+                <div class="slide-content">
+                  <img
+                    class="slide-image"
+                    src="../../images/baixos/testecarrosel2.jpg"
+                    alt="Fortnite"
+                    width="300px"
+                    height="600px"
+                  />
+                  <div class="slide-description">
+                    <h3>Rainbow</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item" data-slide="item" data-index="2">
+                <div class="slide-content">
+                  <img
+                    class="slide-image"
+                    src="../../images/baixos/testecarrosel3.jpg"
+                    alt="Freefire"
+                    width="300px"
+                    height="600px"
+                  />
+                  <div class="slide-description">
+                    <h3>Salt</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-controls" data-slide="controls-wrapper"></div>
           </div>
-          <div class="slide">
-            <img src="/src/images/baixos/testecarrosel2.jpg" alt="foto2" />
-          </div>
-          <div class="slide">
-            <img src="/src/images/baixos/testecarrosel3.jpg" alt="foto3" />
-          </div>
-          <div class="slide">
-            <img src="/src/images/baixos/testecarrosel4.jpg" alt="foto4" />
-          </div>
-
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-        </div>
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
         </div>
       </section>
     </main>
     <script src="/src/scripts/main.js"></script>
+    <script>
+      initSlider({ startAtIndex: 0, autoPlay: true, timeInterval: 3000 });
+    </script>
   </body>
 </html>
