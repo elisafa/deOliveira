@@ -6,6 +6,7 @@
 @use "videos";
 @use "carousel";
 @use "footer";
+@use "paginainicial";
 
 * {
   margin: 0;
@@ -13,6 +14,24 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+// .main {
+//   overflow: hidden;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -1;
+//   // opacity: 0.2;
+
+//   &__video {
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+//     overflow-y: visible;
+//   }
+// }
 
 .container {
   width: function.em(1290);
