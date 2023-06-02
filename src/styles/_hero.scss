@@ -96,5 +96,34 @@
         // margin-left: 80px;
       }
     }
+
+    &--img {
+      display: none;
+    }
+
+    &--img.active {
+      display: block;
+    }
+  }
+}
+
+.botoes {
+  position: absolute;
+  width: 40vw;
+  display: flex;
+  top: 80%;
+  gap: 550px;
+
+  &__previous-rainbow,
+  &__next-rainbow {
+    font-size: 50px;
+    padding: 10px;
+    background-color: variaveis.$cinza;
+    opacity: 0.3;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  @media (min-width: 1900px) {
+    gap: 750px;
   }
 }

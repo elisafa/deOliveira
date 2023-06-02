@@ -14,7 +14,9 @@
   <body>
     <header class="header">
       <nav class="header__menu container">
-        <img class="header__menu__logo" src="/src/images/logo.svg" alt="Logo Principal" />
+        <a href="../../../index.html">
+          <img class="header__menu__logo" src="/src/images/logo.svg" alt="Logo Principal"
+        /></a>
         <ul class="header__menu__opcoes">
           <li class="header__menu__opcoes__itens">
             <a href="#">baixos</a>
@@ -62,10 +64,26 @@
               </button>
             </div>
 
-            <figure>
+            <figure class="carroussel">
+              <div class="botoes">
+                <button
+                  class="botoes__previous-rainbow fas fa-chevron-left"
+                  data-slide="previous-rainbow"
+                ></button>
+                <button
+                  class="botoes__next-rainbow fas fa-chevron-right"
+                  data-slide="next-rainbow"
+                ></button>
+              </div>
+
               <img
-                class="hero__container__rainbowblue"
-                src="/src/images/rainbowkf/rainbowkfblue.webp"
+                class="hero__container__rainbowblue hero__container--img active"
+                src="/src/images/rainbowkf/rainbowkfblueocean.png"
+                alt="Baixo RainbowKF"
+              />
+              <img
+                class="hero__container__rainbowblue hero__container--img"
+                src="/src/images/rainbowkf/rainbowkfblue.png"
                 alt="Baixo RainbowKF"
               />
             </figure>
@@ -196,15 +214,15 @@
                 <div class="slide-content">
                   <img
                     class="slide-image"
-                    src="../../images/baixos/testecarrosel1.jpg"
+                    src="../../images/baixos/slide1.png"
                     alt="Assassin's Creed"
                     width="300px"
-                    height="800px"
+                    height="960px"
                   />
-                  <div class="slide-description">
+                  <!-- <div class="slide-description">
                     <h3>Music Way</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="slide-item" data-slide="item" data-index="1">
@@ -214,12 +232,12 @@
                     src="../../images/baixos/testecarrosel2.jpg"
                     alt="Fortnite"
                     width="300px"
-                    height="800px"
+                    height="960px"
                   />
-                  <div class="slide-description">
+                  <!-- <div class="slide-description">
                     <h3>Rainbow</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="slide-item" data-slide="item" data-index="2">
@@ -229,12 +247,12 @@
                     src="../../images/baixos/testecarrosel3.jpg"
                     alt="Freefire"
                     width="300px"
-                    height="800px"
+                    height="960px"
                   />
-                  <div class="slide-description">
+                  <!-- <div class="slide-description">
                     <h3>Salt</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -257,6 +275,7 @@
       </div>
     </footer>
     <script src="/src/scripts/main.js"></script>
+    <script src="/src/scripts/carrossel.js"></script>
     <script>
       initSlider({ startAtIndex: 0, autoPlay: true, timeInterval: 3000 });
     </script>
