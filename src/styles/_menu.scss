@@ -38,6 +38,11 @@
           font-size: function.em(16);
           color: variaveis.$dourado;
           text-transform: uppercase;
+          transition: padding 0.9s ease;
+        }
+        a:hover {
+          padding-bottom: 25px;
+          border-bottom: 3px solid variaveis.$dourado;
         }
       }
     }
