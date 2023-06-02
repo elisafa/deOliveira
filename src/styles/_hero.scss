@@ -10,11 +10,21 @@
       height: function.em(680);
     }
 
-    &__img {
+    &__img-rainbowkf {
       margin-top: function.em(180);
       width: 100%;
       @media (max-width: 1900px) {
         margin-top: function.em(130);
+      }
+    }
+
+    &__img-mirage {
+      // background-color: red;
+      margin-top: function.em(140);
+      width: 100%;
+      @media (max-width: 1900px) {
+        margin-top: function.em(80);
+        width: 80%;
       }
     }
 
@@ -60,7 +70,7 @@
     &__texto2 {
       margin-top: function.em(100);
       @media (max-width: 1900px) {
-        margin-top: function.em(80);
+        margin-top: function.em(40);
       }
     }
 
