@@ -30,10 +30,24 @@
     z-index: 1;
 
     &--bandeiras {
+      display: flex;
+      gap: 30px;
       .img1 {
         transition: all 1s ease;
       }
       .img1:hover {
+        transform: scale(1.2);
+      }
+      .img2 {
+        transition: all 1s ease;
+      }
+      .img2:hover {
+        transform: scale(1.2);
+      }
+      .img3 {
+        transition: all 1s ease;
+      }
+      .img3:hover {
         transform: scale(1.2);
       }
     }
