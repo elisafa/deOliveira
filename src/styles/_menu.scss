@@ -43,8 +43,45 @@
         a:hover {
           padding-bottom: 25px;
           border-bottom: 3px solid variaveis.$dourado;
+          + .header__menu__submenu {
+            opacity: 1;
+          }
         }
       }
+    }
+    &__submenu {
+      list-style: none;
+      background-color: rgba(60, 54, 54, 0.8);
+      width: 196px;
+      height: 400px;
+      position: absolute;
+      top: 80px;
+      left: 850px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+
+      li {
+        color: variaveis.$dourado;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px;
+      }
+
+      li .baixo-submenu:hover {
+        color: variaveis.$preto;
+        padding-bottom: 25px;
+        border-bottom: 0px solid variaveis.$dourado;
+      }
+      li:hover {
+        background-color: variaveis.$dourado;
+        color: variaveis.$preto;
+        font-weight: 700;
+      }
+    }
+    &__submenu:hover {
+      opacity: 1;
+      pointer-events: auto;
     }
   }
 }
