@@ -34,6 +34,14 @@
         width: 100%;
       }
     }
+    &__img-dreamclassic {
+      margin-top: function.em(140);
+      width: 100%;
+      @media (max-width: 1900px) {
+        margin-top: function.em(140);
+        width: 100%;
+      }
+    }
 
     &__info {
       display: flex;
