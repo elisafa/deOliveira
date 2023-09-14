@@ -61,22 +61,33 @@
       transition: opacity 0.5s ease;
 
       li {
-        color: variaveis.$dourado;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 400;
+        position: relative; /* Necessário para alinhar o link a em toda a extensão do li */
         padding: 15px;
+        overflow: hidden; /* Certifique-se de que o link a não ultrapasse o li */
       }
 
-      li .baixo-submenu:hover {
-        color: variaveis.$preto;
-        padding-bottom: 25px;
-        border-bottom: 0px solid variaveis.$dourado;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: variaveis.$dourado;
+        text-transform: uppercase;
+        transition: none;
       }
+
       li:hover {
         background-color: variaveis.$dourado;
         color: variaveis.$preto;
         font-weight: 700;
+        cursor: pointer;
+      }
+
+      li:hover a {
+        color: variaveis.$preto;
+        padding-bottom: 25px;
+        border-bottom: 0px solid variaveis.$dourado;
+        padding: 0;
       }
     }
     &__submenu:hover {
