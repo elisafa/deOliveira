@@ -19,10 +19,23 @@
     height: 0px;
     border: 2px solid #c89d46;
   }
-  &__iframe {
+  &__iframe-1 {
     margin-top: 20px;
     width: function.em(1280);
     height: function.em(720);
+    display: none;
+  }
+  &__iframe-2 {
+    margin-top: 20px;
+    width: function.em(1280);
+    height: function.em(720);
+    display: none;
+  }
+  &__iframe-3 {
+    margin-top: 20px;
+    width: function.em(1280);
+    height: function.em(720);
+    display: block;
   }
   &__seletores {
     display: flex;
@@ -31,11 +44,16 @@
     &__seletor1,
     &__seletor2,
     &__seletor3 {
-      background-color: variaveis.$chumbo;
+      // background-color: variaveis.$chumbo;
       width: 15px;
       height: 15px;
       border-radius: 50%;
+      border: none;
       margin-top: 20px;
+      cursor: pointer;
     }
+  }
+  .videos__seletores__seletor-clicado {
+    background-color: #cd8cf5; /* Cor de fundo diferente quando clicado */
   }
 }

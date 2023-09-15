@@ -209,7 +209,8 @@
         </figure>
         <span class="videos__linha"></span>
         <iframe
-          class="videos__iframe"
+        id="iframe-1"
+          class="videos__iframe-1"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/GQNz8qlB-Us"
@@ -218,10 +219,36 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+        <iframe
+        id="iframe-2"
+          class="videos__iframe-2"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/iLgxxQPWSxk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+        id="iframe-3"
+          class="videos__iframe-3"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/A5YWNYtR-Dk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
         <div class="videos__seletores">
-          <div class="videos__seletores__seletor1"></div>
+          <!-- <div class="videos__seletores__seletor1"></div>
           <div class="videos__seletores__seletor2"></div>
-          <div class="videos__seletores__seletor3"></div>
+          <div class="videos__seletores__seletor3"></div> -->
+            <button class="videos__seletores__seletor1" data-iframe="iframe-1"></button>
+            <button class="videos__seletores__seletor2" data-iframe="iframe-2"></button>
+            <button class="videos__seletores__seletor3" data-iframe="iframe-3"></button>
+          </div>
         </div>
       </section>
       <!-- CAROUSEL -->
@@ -306,5 +333,6 @@
     <script>
       initSlider({ startAtIndex: 0, autoPlay: true, timeInterval: 5000 });
     </script>
+    <script src="/src/scripts/carrosselvideos.js"></script>
   </body>
 </html>
