@@ -26,6 +26,22 @@
         width: 80%;
       }
     }
+    &__img-wave {
+      margin-top: function.em(140);
+      width: 70%;
+      @media (max-width: 1900px) {
+        margin-top: function.em(80);
+        width: 70%;
+      }
+    }
+    &__img-salt {
+      margin-top: function.em(140);
+      width: 70%;
+      @media (max-width: 1900px) {
+        margin-top: function.em(80);
+        width: 60%;
+      }
+    }
     &__img-rainbowclassic {
       margin-top: function.em(140);
       width: 100%;
@@ -42,11 +58,119 @@
         width: 100%;
       }
     }
-
-    &__info {
+    // RAINBOW KF INFO
+    &__info-raibowkf {
       display: flex;
       flex-direction: column;
       max-width: function.em(413);
+      margin-top: function.em(150);
+
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(50);
+        //margin-left: function.em(150);
+      }
+    }
+    // RAINBOW classic INFO
+    &__info-raibowclassic {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+      margin-top: function.em(250);
+
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(90);
+        //margin-left: function.em(150);
+      }
+    }
+    // DREAM CLASSIC INFO
+    &__info-dreamclassic {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+      margin-top: function.em(225);
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(110);
+        // margin-left: function.em(150);
+      }
+    }
+    //MIRAGE
+    &__info-mirage {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+      margin-top: function.em(100);
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(50);
+        // margin-left: function.em(170);
+      }
+    }
+    //MUSIC WAY
+    &__info-musicway {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+      margin-top: function.em(230);
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(100);
+        // margin-left: function.em(170);
+      }
+    }
+    //DREAM KF
+    &__info-dreamkf {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+      margin-top: function.em(200);
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(140);
+        // margin-left: function.em(170);
+      }
+    }
+    //WAVE
+    &__info-wave {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+      margin-top: function.em(150);
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(60);
+        // margin-left: function.em(170);
+      }
+    }
+    //SALT
+    &__info-salt {
+      display: flex;
+      flex-direction: column;
+      max-width: function.em(413);
+      margin-top: function.em(200);
+      @media (max-width: 1900px) {
+        display: flex;
+        flex-direction: column;
+        max-width: function.em(400);
+        margin-top: function.em(130);
+        // margin-left: function.em(170);
+      }
     }
 
     .simbol {
@@ -83,9 +207,9 @@
     }
 
     &__texto2 {
-      margin-top: function.em(100);
+      margin-top: function.em(0);
       @media (max-width: 1900px) {
-        margin-top: function.em(40);
+        margin-top: function.em(0);
       }
     }
 
@@ -137,7 +261,7 @@
   width: 40vw;
   display: flex;
   top: 80%;
-  gap: 550px;
+  gap: function.em(550);
 
   &__previous-rainbow,
   &__next-rainbow {

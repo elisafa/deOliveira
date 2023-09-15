@@ -56,9 +56,14 @@
       height: 400px;
       position: absolute;
       top: 80px;
-      left: 850px;
+      left: function.em(780);
       opacity: 0;
       transition: opacity 0.5s ease;
+      left: function.em(850);
+
+      @media (max-width: 1900px) {
+        left: function.em(780);
+      }
 
       li {
         position: relative; /* Necessário para alinhar o link a em toda a extensão do li */
