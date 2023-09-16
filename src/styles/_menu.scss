@@ -1,3 +1,107 @@
+// @use "function";
+// @use "variaveis";
+
+// .header {
+//   height: 80px;
+//   background-color: rgba(60, 54, 54, 0.8);
+//   display: flex;
+//   justify-content: space-between;
+//   position: fixed;
+//   width: 100vw;
+//   z-index: 2;
+
+//   &__menu {
+//     margin: 0 auto;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     gap: function.em(340);
+
+//     @media (max-width: 1900px) {
+//       gap: function.em(120);
+//     }
+
+//     &__opcoes {
+//       width: function.em(800);
+//       display: flex;
+//       gap: 63px;
+//       justify-content: end;
+//       @media (max-width: 1900px) {
+//         gap: 33px;
+//       }
+
+//       &__itens {
+//         list-style: none;
+
+//         a {
+//           text-decoration: none;
+//           font-size: function.em(16);
+//           color: variaveis.$dourado;
+//           text-transform: uppercase;
+//           transition: padding 0.9s ease;
+//         }
+//         a:hover {
+//           padding-bottom: 25px;
+//           border-bottom: 3px solid variaveis.$dourado;
+//           + .header__menu__submenu {
+//             opacity: 1;
+//           }
+//         }
+//       }
+//     }
+//     &__submenu {
+//       list-style: none;
+//       background-color: rgba(60, 54, 54, 0.8);
+//       width: 196px;
+//       height: 400px;
+//       position: absolute;
+//       top: 80px;
+//       left: function.em(780);
+//       opacity: 0;
+//       transition: opacity 0.5s ease;
+//       left: function.em(850);
+
+//       @media (max-width: 1900px) {
+//         left: function.em(760);
+//       }
+
+//       li {
+//         position: relative; /* Necessário para alinhar o link a em toda a extensão do li */
+//         padding: 15px;
+//         overflow: hidden; /* Certifique-se de que o link a não ultrapasse o li */
+//       }
+
+//       a {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         text-decoration: none;
+//         color: variaveis.$dourado;
+//         text-transform: uppercase;
+//         transition: none;
+//       }
+
+//       li:hover {
+//         background-color: variaveis.$dourado;
+//         color: variaveis.$preto;
+//         font-weight: 700;
+//         cursor: pointer;
+//       }
+
+//       li:hover a {
+//         color: variaveis.$preto;
+//         padding-bottom: 25px;
+//         border-bottom: 0px solid variaveis.$dourado;
+//         padding: 0;
+//       }
+//     }
+//     &__submenu:hover {
+//       opacity: 1;
+//       pointer-events: auto;
+//     }
+//   }
+// }
+//---------------------------------------------------------------------------------
 @use "function";
 @use "variaveis";
 
@@ -27,7 +131,7 @@
       gap: 63px;
       justify-content: end;
       @media (max-width: 1900px) {
-        gap: 33px;
+        gap: function.em(33);
       }
 
       &__itens {
@@ -38,39 +142,32 @@
           font-size: function.em(16);
           color: variaveis.$dourado;
           text-transform: uppercase;
-          transition: padding 0.9s ease;
-        }
-        a:hover {
-          padding-bottom: 25px;
-          border-bottom: 3px solid variaveis.$dourado;
-          + .header__menu__submenu {
-            opacity: 1;
-          }
+          // background-color: red;
         }
       }
     }
     &__submenu {
       list-style: none;
       background-color: rgba(60, 54, 54, 0.8);
-      width: 196px;
+      width: 180px;
       height: 400px;
       position: absolute;
       top: 80px;
-      left: function.em(780);
-      opacity: 0;
-      transition: opacity 0.5s ease;
       left: function.em(850);
+      display: none;
+      transition: opacity 0.1s ease;
 
       @media (max-width: 1900px) {
         left: function.em(760);
       }
 
       li {
-        position: relative; /* Necessário para alinhar o link a em toda a extensão do li */
-        padding: 15px;
-        overflow: hidden; /* Certifique-se de que o link a não ultrapasse o li */
+        position: relative;
+        overflow: hidden;
+        &:hover {
+          background-color: variaveis.$dourado;
+        }
       }
-
       a {
         display: block;
         width: 100%;
@@ -79,25 +176,12 @@
         color: variaveis.$dourado;
         text-transform: uppercase;
         transition: none;
-      }
+        padding: 15px;
 
-      li:hover {
-        background-color: variaveis.$dourado;
-        color: variaveis.$preto;
-        font-weight: 700;
-        cursor: pointer;
+        &:hover {
+          color: variaveis.$preto;
+        }
       }
-
-      li:hover a {
-        color: variaveis.$preto;
-        padding-bottom: 25px;
-        border-bottom: 0px solid variaveis.$dourado;
-        padding: 0;
-      }
-    }
-    &__submenu:hover {
-      opacity: 1;
-      pointer-events: auto;
     }
   }
 }

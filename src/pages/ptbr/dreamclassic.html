@@ -19,7 +19,7 @@
         /></a>
         <ul class="header__menu__opcoes">
           <li class="header__menu__opcoes__itens">
-            <a href="#">baixos</a>
+            <a class="baixos-link" href="#">baixos</a>
             <ul class="header__menu__submenu">
               <li><a href="./rainbowkf.html">raibow kf</a></li>
               <li><a href="./rainbow.html">raibow classic</a></li>
@@ -90,16 +90,15 @@
                   data-slide="next-rainbow"
                 ></button>
               </div>
-
               <img
                 class="hero__container__rainbowblue hero__container--img active"
-                src="/src/images/dreamclassic/dreamclassic.png"
-                alt="Mirage SG"
+                src="/src/images/dreamclassic/dreamwhite.png"
+                alt="Dream"
               />
               <img
                 class="hero__container__rainbowblue hero__container--img"
-                src="/src/images/dreamclassic/dreamwhite.png"
-                alt="Baixo RainbowKF"
+                src="/src/images/dreamclassic/dreamclassic.png"
+                alt="Dream"
               />
             </figure>
           </div>
@@ -218,7 +217,8 @@
         </figure>
         <span class="videos__linha"></span>
         <iframe
-          class="videos__iframe"
+          id="iframe-1"
+          class="videos__iframe-1"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/GQNz8qlB-Us"
@@ -227,10 +227,32 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+        <iframe
+          id="iframe-2"
+          class="videos__iframe-2"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/iLgxxQPWSxk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          id="iframe-3"
+          class="videos__iframe-3"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/A5YWNYtR-Dk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
         <div class="videos__seletores">
-          <div class="videos__seletores__seletor1"></div>
-          <div class="videos__seletores__seletor2"></div>
-          <div class="videos__seletores__seletor3"></div>
+          <button class="videos__seletores__seletor1" data-iframe="iframe-1"></button>
+          <button class="videos__seletores__seletor2" data-iframe="iframe-2"></button>
+          <button class="videos__seletores__seletor3" data-iframe="iframe-3"></button>
         </div>
       </section>
       <!-- CAROUSEL -->
@@ -250,7 +272,7 @@
                 <div class="slide-content">
                   <img
                     class="slide-image"
-                    src="../../images/baixos/slide1.png"
+                    src="../../images/baixos/testecarrosel1.jpg"
                     alt="Assassin's Creed"
                     width="300px"
                     height="960px"
@@ -316,5 +338,6 @@
       initSlider({ startAtIndex: 0, autoPlay: true, timeInterval: 3000 });
     </script>
     <script src="/src/scripts/carrosselvideos.js"></script>
+    <script src="/src/scripts/submenu.js"></script>
   </body>
 </html>
