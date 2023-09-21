@@ -9,7 +9,7 @@
       href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
     />
     <link rel="stylesheet" href="/dist/css/main.css" />
-    <title>Salt</title>
+    <title>Preamp</title>
   </head>
   <body>
     <header class="header">
@@ -33,7 +33,12 @@
               <li><a href="./salt.html">salt</a></li>
             </ul>
           </li>
-          <li class="header__menu__opcoes__itens"><a href="#">produtos</a></li>
+          <li class="header__menu__opcoes__itens">
+            <a class="produtos-link" href="#">produtos</a>
+            <ul class="header__menu__submenu-preamp">
+              <li><a href="./preampdeoliveira3.html">preamp deOliveira 3.0 </a></li>
+            </ul>
+          </li>
           <li class="header__menu__opcoes__itens"><a href="#">sobre a deoliveira</a></li>
           <li class="header__menu__opcoes__itens"><a href="#">artistas</a></li>
           <li class="header__menu__opcoes__itens"><a href="#">seu lugar</a></li>
@@ -43,27 +48,31 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="hero__container">
-          <div class="grid2">
-            <div class="hero__container__info-salt">
+        <div class="hero__container-preamp">
+          <div class="grid2-dreamclassic">
+            <div class="hero__container-preamp__info-preamps">
               <img
-                class="hero__container__img-salt"
-                src="/src/images/salt/saltlogo.svg"
+                class="hero__container__img-preampdeoliveira3"
+                src="/src/images/preamps/preampdeoliveiralogo.png"
                 alt="Mirage Sg"
                 width="413px"
               />
               <div class="simbol"></div>
-              <!-- <h2 class="hero__container__titulo">
-                UMA INFINIDADE DE TIMBRES DISPONÍVEL PARA VOCÊ
-              </h2> -->
-              <p class="hero__container__texto">
-                O Salt PJ é uma junção de conforto, potência, modernidade e versatilidade.
-                Mantendo a específica sonoridade dos tradicionais baixos Precision Jazz.
-              </p>
-              <div class="simbol"></div>
-              <p class="hero__container__texto2">
-                Consulte-nos e saiba mais sobre o Salt, suas configurações e opções de
-                cores.
+              <h2 class="hero__container__titulo">
+                <span class="titulo1">Modelo 5K</span>
+                <ul class="titulo2">
+                  5 Controles
+                  <li class="item1">Volume captador braço,</li>
+                  <li class="item1">Volume captador ponte,</li>
+                  <li class="item1">Grave, médio e agudo</li>
+                </ul>
+                <span class="titulo2">+ 1 Switch Active / Passive</span><br />
+                <span class="titulo2">Switch Tone Shape</span>
+              </h2>
+              <div class="simbol2"></div>
+              <p class="hero__container-preamp__texto2-preamps">
+                Turbine o seu baixo com o mesmo circuito que são usados nos baixos
+                deOliveira Bass (Modelos Rainbow KF, Mirage e Rainbow Classic)
               </p>
               <button class="hero__container__btn">
                 <figure>
@@ -78,7 +87,7 @@
             </div>
 
             <figure class="carroussel">
-              <div class="botoes">
+              <div class="botoes-preamps">
                 <button
                   class="botoes__previous-rainbow fas fa-chevron-left"
                   data-slide="previous-rainbow"
@@ -88,45 +97,44 @@
                   data-slide="next-rainbow"
                 ></button>
               </div>
-
               <img
                 class="hero__container__rainbowblue hero__container--img active"
-                src="/src/images/salt/saltwhite.png"
-                alt="Mirage SG"
+                src="/src/images/preamps/preampdeoliveira5k.png"
+                alt="Dream"
               />
-              <!-- <img
+              <img
                 class="hero__container__rainbowblue hero__container--img"
-                src="/src/images/rainbowkf/rainbowkfblue.png"
-                alt="Baixo RainbowKF"
-              /> -->
+                src="/src/images/dreamclassic/dreamclassic.png"
+                alt="Dream"
+              />
             </figure>
           </div>
         </div>
       </section>
-      <!-- BAIXOS -->
-      <section class="baixos">
-        <div class="baixos__container container">
-          <!-- MIRAGE -->
-          <div class="baixos__mirage bg--baixo">
-            <a href="./miragesg.html"
+      <!-- PREAMPS -->
+      <section class="preamps">
+        <div class="preamps__container container">
+          <!-- deOliveira -->
+          <div class="preamps__raibow bg--baixo">
+            <a href="./rainbow.html"
               ><figure class="baixos__figure">
-                <img
-                  class="baixos__img1"
-                  src="/src/images/baixos/mirage.png"
-                  alt="Baixo Mirage"
-                />
-                <img
-                  class="baixos__img2"
-                  src="/src/images/baixos/miragelogo.png"
-                  alt="Logo Mirage"
-                /></figure
-            ></a>
+                <a href="./rainbow.html"
+                  ><img
+                    class="preamp1"
+                    src="/src/images/preamps/preampdeoliveira.png"
+                    alt="Raibow"
+                /></a>
+                <p>deOliveira 4K</p>
+              </figure></a
+            >
           </div>
           <!-- RAIBOW  -->
           <div class="baixos__raibow bg--baixo">
             <a href="./rainbow.html"
               ><figure class="baixos__figure">
-                <img src="/src/images/baixos/raibow.png" alt="Raibow" />
+                <a href="./rainbow.html"
+                  ><img src="/src/images/baixos/raibow.png" alt="Raibow"
+                /></a>
                 <img
                   class="baixos__img2"
                   src="/src/images/baixos/rainbowlogo.png"
@@ -151,54 +159,6 @@
                 /></figure
             ></a>
           </div>
-          <!-- DREAM -->
-          <div class="baixos__dream bg--baixo">
-            <a href="./dreamclassic.html"
-              ><figure class="baixos__figure">
-                <img src="/src/images/baixos/dream.png" alt="Dream" />
-                <img
-                  class="baixos__img2"
-                  src="/src/images/baixos/dreamlogo.png"
-                  alt="Logo Dream"
-                /></figure
-            ></a>
-          </div>
-          <!-- DREAM KF -->
-          <div class="baixos__dreamkf bg--baixo">
-            <a href="./dreamkf.html"
-              ><figure class="baixos__figure">
-                <img src="/src/images/baixos/dreamkf.png" alt="Dream kf" />
-                <img
-                  class="baixos__img2"
-                  src="/src/images/baixos/dreamkflogo.png"
-                  alt="Logo dreamkf"
-                /></figure
-            ></a>
-          </div>
-          <!-- MUSIC WAY -->
-          <div class="baixos__musicway bg--baixo">
-            <a href="./musicway.html"
-              ><figure class="baixos__figure">
-                <img src="/src/images/baixos/musicway.png" alt="Music Way" />
-                <img
-                  class="baixos__img2"
-                  src="/src/images/baixos/musicwaylogo.png"
-                  alt="Logo Mirage"
-                /></figure
-            ></a>
-          </div>
-          <!-- WAVE -->
-          <div class="baixos__wave bg--baixo">
-            <a href="./wave.html"
-              ><figure class="baixos__figure">
-                <img src="/src/images/baixos/wave.png" alt="Wave" />
-                <img
-                  class="baixos__img2"
-                  src="/src/images/baixos/wavelogo.png"
-                  alt="Logo Wave"
-                /></figure
-            ></a>
-          </div>
         </div>
       </section>
       <!-- VIDEOS -->
@@ -206,7 +166,7 @@
         <figure class="videos__fig">
           <img
             class="videos__logo mirage"
-            src="/src/images/salt/logovideosalt.svg"
+            src="/src/images/dreamclassic/logovideodreamclassic.svg"
             width="629px"
             height="68px"
             alt="Logo Mirage"

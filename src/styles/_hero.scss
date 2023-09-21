@@ -58,6 +58,15 @@
         width: 100%;
       }
     }
+    //LOGO
+    &__img-preampdeoliveira3 {
+      margin-top: function.em(140);
+      width: 60%;
+      @media (max-width: 1900px) {
+        margin-top: function.em(140);
+        width: 60%;
+      }
+    }
     // RAINBOW KF INFO
     &__info-raibowkf {
       display: flex;
