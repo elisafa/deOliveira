@@ -3,11 +3,10 @@
 
 .preamps {
   position: relative;
-  height: function.em(750);
+  height: function.em(400);
   background-color: variaveis.$preto;
   display: flex;
   align-items: start;
-  //   margin-top: -150px;
   justify-content: center;
 
   &__container {
@@ -39,15 +38,11 @@
       transform: scale(1.1);
       border: 5px solid variaveis.$dourado;
     }
-
-    // @media (max-width: 1900px) {
-    //   width: function.em(150);
-    // }
   }
 
-  .preamp1 {
-    width: 413px;
-  }
+  // .preamp1 {
+  //   width: 350px;
+  // }
 
   &__figure {
     display: flex;
@@ -56,9 +51,36 @@
     justify-content: space-around;
     gap: 5px;
   }
+  .subtitulo {
+    color: #1b1b1b;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    .modelopre {
+      font-weight: 100;
+    }
+  }
 
   &__img2 {
     height: 30px;
     // width: 140px;
+  }
+}
+
+.comercial {
+  height: function.em(120);
+  background-color: variaveis.$preto;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+
+  &-preamps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
 }

@@ -179,6 +179,7 @@
 
         &:hover {
           color: variaveis.$preto;
+          font-weight: 700;
         }
       }
     }
@@ -186,7 +187,7 @@
     &__submenu {
       list-style: none;
       background-color: rgba(60, 54, 54, 0.8);
-      width: 180px;
+      width: 185px;
       height: 400px;
       position: absolute;
       top: 80px;
@@ -217,6 +218,7 @@
 
         &:hover {
           color: variaveis.$preto;
+          font-weight: 700;
         }
       }
     }
