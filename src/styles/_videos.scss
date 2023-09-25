@@ -26,7 +26,7 @@
     margin-top: 20px;
     width: function.em(1280);
     height: function.em(720);
-    display: none;
+    display: block;
   }
   &__iframe-2 {
     margin-top: 20px;
@@ -38,7 +38,7 @@
     margin-top: 20px;
     width: function.em(1280);
     height: function.em(720);
-    display: block;
+    display: none;
   }
   &__seletores {
     display: flex;
