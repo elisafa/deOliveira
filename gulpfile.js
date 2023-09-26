@@ -26,10 +26,15 @@ function videos() {
   return gulp.src("src/videos/**/*").pipe(gulp.dest("./dist/videos"));
 }
 
-exports.default = gulp.parallel(styles, images, scripts, html, videos);
+function copyIndex() {
+  return gulp.src("src/index.html").pipe(gulp.dest("./dist")); // Copie o arquivo index.html para "dist"
+}
+
+exports.default = gulp.parallel(styles, images, scripts, html, videos, copyIndex);
 exports.watch = function () {
   gulp.watch("src/styles/*.scss", gulp.parallel(styles));
   gulp.watch("src/scripts/*.js", gulp.parallel(scripts));
   gulp.watch("src/pages/*.html", gulp.parallel(html));
   gulp.watch("src/videos/**/*", gulp.parallel(videos));
+  gulp.watch("src/index.html", gulp.parallel(copyIndex));
 };
