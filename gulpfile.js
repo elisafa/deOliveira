@@ -22,9 +22,14 @@ function images() {
   return gulp.src("src/images/**/*").pipe(imagemin()).pipe(gulp.dest("./dist/images"));
 }
 
-exports.default = gulp.parallel(styles, images, scripts, html);
+function videos() {
+  return gulp.src("src/videos/**/*").pipe(gulp.dest("./dist/videos"));
+}
+
+exports.default = gulp.parallel(styles, images, scripts, html, videos);
 exports.watch = function () {
   gulp.watch("src/styles/*.scss", gulp.parallel(styles));
   gulp.watch("src/scripts/*.js", gulp.parallel(scripts));
   gulp.watch("src/pages/*.html", gulp.parallel(html));
+  gulp.watch("src/videos/**/*", gulp.parallel(videos));
 };
