@@ -27,7 +27,7 @@ function videos() {
 }
 
 function copyIndex() {
-  return gulp.src("src/index.html").pipe(gulp.dest("./dist")); // Copie o arquivo index.html para "dist"
+  return gulp.src("src/index.html").pipe(gulp.dest("./dist"));
 }
 
 exports.default = gulp.parallel(styles, images, scripts, html, videos, copyIndex);
