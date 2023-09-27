@@ -1,0 +1,1 @@
+document.addEventListener("click",function(e){document.querySelectorAll("iframe").forEach(function(e){new YT.Player(e).pauseVideo()})});
