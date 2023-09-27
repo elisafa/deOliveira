@@ -5,16 +5,10 @@
   &__container {
     background-image: url(../images/rainbowkf/background.png);
     height: function.em(880);
-    width: 100%;
 
     @media (max-width: 1900px) {
       height: function.em(680);
-      width: 100%;
     }
-
-    // @media (max-width: 1200px) {
-    //   height: function.em(380);
-    // }
 
     &__img-rainbowkf {
       margin-top: function.em(180);
